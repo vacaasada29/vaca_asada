@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+  <header>
+    <h1>¡DESWEB!</h1>
+    <h2>Formulario de registro</h2>
+  </header>
+
+  <form action="#" method="post">
+    
+    <div>
+      <fieldset>
+        <legend>¿Quien eres?</legend>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre"><br>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" type="text" name="apellido"><br>
+        <label for="correo">Correo electronico</label>
+        <input id="correo" type="email" name="correo"><br>
+        <label for="dia">Dia de nacimiento</label><br>
+        <input id="dia" type="date" max="2007" name="fecha-Nacimiento">
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+
+        <legend>¿De donde eres?</legend>
+
+        <label for="ciudad">Ciudad</label>
+        <input id="ciudad" type="text" name="ciudad"><br>
+
+        <label for="codigoPostal">Codigo postal</label>
+        <input type="text" id="codigoPostal" name="codigoPostal"><br>
+
+        <label for="pais">Pais</label>
+        <input id="pais" type="text" name="pais">
+
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>¿Como quieres iniciar?</legend>
+        <label for="nombreUsuario">nombre de usuario</label>
+        <input id="nombreUsuario" type="text" name="nombreUsuario"><br>
+
+        <label for="contraseña">Contraseña</label>
+        <input id="contraseña" type="password" name="password"><br>
+
+        <label for="repetirContraseña">Repetir contraseña</label>
+        <input id="repetirContraseña" type="password" name="repetirContraseña">
+      </fieldset>
+    </div>
+
+    <div>
+
+      <fieldset>
+
+        <legend>¿Condiciones de registro?</legend>
+
+        <p>Deseo recibir ofertar de ¡DESWEB!</p>
+
+        <input type="radio" name="ofertas" id="ofertas-1" value="1">
+        <label for="ofertas-1">Una vez al dia </label><br>
+
+        <input type="radio" name="ofertas" id="ofertas-2" value="2">
+        <label for="ofertas-2">Una vez a la semana</label><br>
+
+        <input type="radio" name="ofertas" id="ofertas-3" value="3">
+        <label for="ofertas-3">Una vez al mes </label><br><br>
+
+        <input type="checkbox" name="acepto" id="acepto">
+        <label for="acepto" class="inline">Acepto el aceurdo de servicios, la declaracion de privacidad y la declaracion de uso de cookies</label>
+
+      </fieldset>
+
+    </div>
+
+    <div class="centrado">
+      <button type="submit" value="crear cuenta" id="boton-crear">Crear cuenta</button>
+    </div>
+
+  </form>
+</body>
+</html>
